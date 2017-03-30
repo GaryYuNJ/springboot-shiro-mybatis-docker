@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <zip destfile="D:\MyProject\FINANCE_REPORT_project\LDFinanceReportSys\FinanceReportSys\target/app.zip">
+    <zipfileset dir="D:\MyProject\FINANCE_REPORT_project\LDFinanceReportSys\FinanceReportSys\target/docker"/>
+    <zipfileset includes="FinanceReportSys.jar" dir="D:\MyProject\FINANCE_REPORT_project\LDFinanceReportSys\FinanceReportSys\target"/>
+  </zip>
+</target>
+</project>
