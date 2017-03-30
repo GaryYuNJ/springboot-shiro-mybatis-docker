@@ -22,4 +22,5 @@ public class SampleApplication {
     String hello() {
     	return "Hello World!";
     }
+
 }

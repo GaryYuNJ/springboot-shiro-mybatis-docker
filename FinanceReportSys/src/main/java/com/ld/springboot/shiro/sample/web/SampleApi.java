@@ -1,5 +1,7 @@
 package com.ld.springboot.shiro.sample.web;
 
+import java.util.Map;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.http.ResponseEntity;
@@ -25,5 +27,12 @@ public class SampleApi {
         boolean permitted = subject.isPermitted("system:admin:create");
         System.out.println("permitted = " + permitted);
         return ResponseEntity.ok("Here you are");
+    }
+    
+    
+    @RequestMapping("/helloJsp")
+    public String helloJsp(Map<String,Object> map){
+           map.put("hello", "gary");
+           return "helloJsp";
     }
 }

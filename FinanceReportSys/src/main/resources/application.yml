@@ -40,7 +40,7 @@ spring:
         
     mvc:
         view:
-            prefix: /jsp/
+            prefix: /WEB-INF/jsp/
             suffix: .jsp
     freemarker:
         cache: false
@@ -107,6 +107,8 @@ shiro:
     /favicon.ico: anon
     /assets/**: anon
     /test/**: anon
+    /helloJsp/**: anon
+    /js/**: anon
     /**: authc
     
   filter-chain-sql: SELECT r.url, r.permission
